@@ -1,0 +1,103 @@
+/* iOS Cordova Tweak */
+.device-cordova.device-ios {
+  height: 100vh;
+}
+
+html {
+  font-size: 16px;
+  line-height: 1.5;
+  -webkit-text-size-adjust: 100%;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6, p, ul, ol, figure, blockquote {
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  all: unset;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+}
+
+input {
+  all: unset;
+  box-sizing: border-box;
+}
+
+.framework7-root {
+  overflow-y: auto;
+}
+
+body {
+  font-size: 1rem;
+  background: #0057FF;
+  position: relative;
+}
+
+body::before {
+  content: "";
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.53);
+  pointer-events: none;
+}
+
+.shadow {
+  box-shadow: 0 0.25rem 0.625rem rgba(0, 0, 0, 0.5);
+}
+
+.info {
+  min-height: 100%;
+  width: 100%;
+}
+
+.content_info {
+  z-index: 80;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto 1fr;
+  gap: 1.25rem;
+  margin-left: 3.75rem;
+  padding: 1.25rem;
+  min-height: 100%;
+}
+
+.contentMov {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 1000px) {
+  .info {
+    padding: 0.5rem 0.5rem 5rem;
+  }
+
+  .content_info {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    gap: 1.25rem;
+    margin-left: 0;
+    padding: 0.75rem;
+  }
+}
