@@ -27,6 +27,7 @@ export default {
     }),
   ],
   root: SRC_DIR,
+  envDir: __dirname,
   base: '',
   publicDir: PUBLIC_DIR,
   build: {
